@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Maaran Parotta Kadai</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body {
+            background-color: black;
+            font-family: 'Times New Roman', sans-serif;
+            color: #fff;
+            background-image: url(''); /* background-image */
+            background-size: cover;
+            background-position: center;
+            background-attachment: fixed;
+            height: 100vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            padding: 20px 0;
+        }
+        /* Container for the entire page */
+        .container {
+            width: 90%;
+            margin: 0 auto;
+            padding: 40px 0;
+        }
+        /* Header section */
+        header {
+            background-color: white; /* Gray header */
+            color: black;
+            padding: 40px;
+            text-align: center;
+            border-radius: 8px;
+            box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+        }
+        header h1 {
+            font-size: 48px;
+            color: red;
+            margin: 0;
+            letter-spacing: 1.5px;
+        }
+        header h2 {
+            font-size: 40px;
+            margin: 0;
+            letter-spacing: 1.5px;
+        }
+        /* Grid layout */
+        .grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 30px;
+            margin-top: 30px;
+        }
+        .grid-item {
+            background-color: #ffffff;
+            border-radius: 10px;
+            overflow: hidden;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+            padding: 20px;
+            text-align: center;
+            border: 1px solid #ddd;
+        }
+        .grid-item:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 12px 24px rgba(0, 0, 0, 0.15);
+        }
+        .grid-item img {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+            border-radius: 8px;
+        }
+        .grid-item h2 {
+            font-size: 24px;
+            color: #333;
+            margin: 15px 0;
+        }
+        .grid-item p {
+            font-size: 16px;
+            color: #666;
+        }
+        /* Make the layout responsive */
+        @media (max-width: 768px) {
+            .grid {
+                grid-template-columns: repeat(2, 1fr);
+            }
+        }
+        @media (max-width: 480px) {
+            .grid {
+                grid-template-columns: 1fr;
+            }
+        }
+        /* Footer section 
+        background-image: url('logo.jpg');
+        <img src="https://via.placeholder.com/350x200" alt="Item 1"> 
+        <img src="https://via.placeholder.com/350x200" alt="Item 2">
+        <img src="https://via.placeholder.com/350x200" alt="Item 3">
+        <img src="https://via.placeholder.com/350x200" alt="Item 4">
+        <img src="https://via.placeholder.com/350x200" alt="Item 5">
+        <img src="https://via.placeholder.com/350x200" alt="Item 6">
+
+
+
+
+        <div class="grid-item">
+                <h2>Implementation of R Program – Basic </h2>
+                <button onclick="openFile()">Open File</button>
+	            <a id="fileLink" href="2Implementation.txt" style="display: none;" target="_blank"></a>
+            </div>
+            <div class="grid-item">
+                <h2>Implementation of R Program – Basic (Addition) </h2>
+                <button onclick="openFile()">Open File</button>
+	            <a id="fileLink href="3impleaddition.txt" style="display: none;" target="_blank"></a>
+            </div>
+            <div class="grid-item">
+                <h2>Implementation of Data Types in R </h2>
+                <button onclick="openFile()">Open File</button>
+	            <a id="fileLink" href="4datatypeinR.txt" style="display: none;" target="_blank"></a>
+            </div>
+            <div class="grid-item">
+                <h2>Implementation of Control Statements in R </h2>
+                <button onclick="openFile()">Open File</button>
+	            <a id="fileLink" href="5controlstate.txt" style="display: none;" target="_blank"></a>
+            </div>
+            <div class="grid-item">
+                <h2>Implementation of Looping Statements </h2>
+                <button onclick="openFile()">Open File</button>
+	            <a id="fileLink" href="6loopingstmt.txt" style="display: none;" target="_blank"></a>
+            </div>
+            <div class="grid-item">
+                <h2>Implementation of Decision Tree and KNN in R </h2>
+                <button onclick="openFile()">Open File</button>
+	            <a id="fileLink" href="7treeknn.txt" style="display: none;" target="_blank"></a>
+            </div>
+            <div class="grid-item">
+                <h2>Implementation of Naïve Bayes </h2>
+                <button onclick="openFile()">Open File</button>
+	            <a id="fileLink" href="8naive.txt" style="display: none;" target="_blank"></a>
+            </div>
+            <div class="grid-item">
+                <h2>Implementation of Random Forest in R </h2>
+                <button onclick="openFile()">Open File</button>
+	            <a id="fileLink" href="9randomforest.txt" style="display: none;" target="_blank"></a>
+            </div>
+            <div class="grid-item">
+                <h2>Implementation of K-means in R </h2>
+                <button onclick="openFile()">Open File</button>
+	            <a id="fileLink" href="10kmeans.txt" style="display: none;" target="_blank"></a>
+            </div> 1to5 Programs    R program Final Record
+        */
+        footer {
+            background-color: #333; /* Gray footer */
+            color: white;
+            padding: 20px;
+            text-align: center;
+            margin-top: 40px;
+            border-radius: 8px;
+        }
+        footer p {
+            font-size: 14px;
+            margin: 0;
+        }
+    </style>
+</head>
+    <body>
+    <header>
+        <h1></h1> <div> <br> <h2>DATA ANALYSIS USING R</h2> <br> <h3>Link for Online Compiler : https://www.mycompiler.io/new/r</h3>
+    </header>
+    <center>
+    <div class="container">
+        <div class="grid">
+            
+<div class="grid-item">
+    <h2>ODD LIST OF PROGRAMS</h2>
+    <button onclick="openFile('fileLink1')">Open File</button>
+    <a id="fileLink1" href="R-Program-Odd.pdf" style="display: none;" target="_blank"></a>
+</div>
+
+<div class="grid-item">
+    <h2>EVEN LIST OF PROGRAMS</h2>
+    <button onclick="openFile('fileLink2')">Open File</button>
+    <a id="fileLink2" href="R-Program-Even.pdf" style="display: none;" target="_blank"></a>
+</div>
+
+<div class="grid-item">
+    <h2>PROGRAMS</h2>
+    <button onclick="openFile('fileLink3')">Open File</button>
+    <a id="fileLink3" href="R program Final Record.pdf" style="display: none;" target="_blank"></a>
+</div>
+            
+        </div>
+    </center>
+        <script>
+function openFile(linkId) {
+    const fileLink = document.getElementById(linkId);
+    if (fileLink) {
+        fileLink.click();
+    }
+}
+</script>
+    </div>
+    <footer>
+        <p>&copy; All Rights Reserved.</p>
+    </footer>
+    </body>
+</html>
